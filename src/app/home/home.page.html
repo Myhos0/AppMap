@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      GPS Location
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div #map id="map" style="width: 100%; height: 100%;"></div>
+  <h2>My location</h2>
+  <p>Latitude: {{newLocation.latitude}}</p>
+  <p>longitud: {{newLocation.longitude}}</p>
+  <ion-button (click)="getCurrentLocation()" >Refresh Location</ion-button>
+</ion-content>
